@@ -1,13 +1,22 @@
-import { Alldatas } from "./data";
+import React from "react";
+import Card from "./Card";
+import AllDatas from "./data";
 
-const Card = ({item: {
-    id, title, price
-}}) => {
-    const btnClick = (x) =>{
-        console.log(x)
-    }
-    return(
-        <div className="card" key={id}>
-        </div>
-    )
+const Home = () => {
+      return(
+        <>
+        {
+            AllDatas.map((item) => {
+                return(
+                <Card 
+                  key={item.id}
+                  id={item.id}
+                  title={item.title}
+                  price={item.price}
+                />)
+            })
+        }
+        </>
+      )
 }
+export default Home;

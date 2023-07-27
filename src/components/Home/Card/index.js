@@ -10,8 +10,8 @@ const Card = ({
         <>
         <div className="card" key={id}>
             <p>{id}</p>
-            <p>Name: ${title}</p>
-            <p>Price: ${price}</p>
+            <p>Name: {title}</p>
+            <p>Price: {price}</p>
             <button onClick={ () => handleClick({title})}>click on me</button>
         </div>
         </>

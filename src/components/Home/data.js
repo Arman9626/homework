@@ -1,4 +1,5 @@
-export const Alldatas  = () => {
+
+ const AllDatas =
     [
     {
         id: '1',
@@ -21,4 +22,5 @@ export const Alldatas  = () => {
         price:'700'
     }
 ]
-}
+
+export default AllDatas;
